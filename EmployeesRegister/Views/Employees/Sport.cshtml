@@ -1,0 +1,11 @@
+﻿@model EmployeesRegister.Models.Employee
+
+@{
+    ViewBag.Title = "Sport";
+}
+
+@var model = db.Employees.Where(i => i.Department =="Sport").ToList();
+return View(model);
+
+<h2>Sport</h2>
+
